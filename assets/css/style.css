@@ -32,7 +32,7 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
-  text=shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
   }
 
@@ -54,7 +54,7 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li a {
+.header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
@@ -148,9 +148,8 @@ section {
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.75);
 }
-}
 .form-input:focus {
-  background-color: rgba(57,166,178, 1);
+  background-color: rgba(255,255,255, 1);
   outline: none;
 }
 
@@ -370,7 +369,7 @@ section {
 }
 
 .contact-info > * {
-  flex 1;
+  flex: 1;
   margin: 15px;
 }
 
@@ -382,13 +381,11 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
-  background-color: rgba(57, 166, 178, 0.75);
+  background-color: rgba(255, 255, 255 0.75);
   border-radius: 10px;
 }
 
 
-.contact-form:focus {
-  rgba(255, 255, 255, 1);
 
   .contact-form button {
     width: 100%;
@@ -399,11 +396,16 @@ section {
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
-
+    
   }
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 0.75);
+    outline: none;
+  }
+
   .contact-form button:hover {
     color: #fce138;
-    background: #39a6b2;
+    background: rgba(255, 255, 255, 1);
   }
 /* REACH OUT STYLES END */
 
@@ -533,3 +535,4 @@ section {
   .contact-form {
     order: 3;
   }
+}
